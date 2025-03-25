@@ -35,6 +35,19 @@ E-->|IMPORT|G
 F-->|IMPORT|G
 """)
 ```
+### bigPicture
+flowchart LR
+    A((User))
+    B(Chatbot)
+    C(KG)
+    D(Codebase)
+    E(LLM)
+    A -->|Question|B
+    B <-->|Queries|C
+    D -->|Metadata|C
+    C -->|Prompts|E
+    E -->|Natural language|B
+
 ### structuredOverview
 flowchart TD
 subgraph Structured
