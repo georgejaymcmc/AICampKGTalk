@@ -184,3 +184,4 @@ flowchart TD
     E-->|Lexical and Similarity|G(Ontology checking)
     G-->H(Business KG Model)
     end
+

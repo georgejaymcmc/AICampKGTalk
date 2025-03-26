@@ -9,11 +9,11 @@ neo4j = "*"
 python-dotenv = "*"
 pandas = "*"
 yfiles-jupyter-graphs-for-neo4j = "*"
-langchain = "*"
-langchain-community = "*"
 langchain-openai = "*"
 langchain-core = "*"
 langchain-ollama = "*"
+langchain-neo4j = "*"
+gradio = "*"
 
 [dev-packages]
 flake8 = "*"
