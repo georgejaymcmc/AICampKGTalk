@@ -1,3 +1,5 @@
+# Ignore ide folder
+.idea/
 # Default ignored files
 /shelf/
 /workspace.xml
