@@ -1,5 +1,30 @@
-# Ignore ide folder
+# Ignore dev notes
+docs
+
+# Ignore .idea files
 .idea/
+
+# Ignore Pipfile.lock
+*.lock
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Ignore .env
+# dotenv environment variable files
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.env
+
 # Default ignored files
 /shelf/
 /workspace.xml

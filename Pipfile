@@ -4,9 +4,19 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+jupyter = "*"
+neo4j = "*"
+python-dotenv = "*"
+pandas = "*"
+yfiles-jupyter-graphs-for-neo4j = "*"
+langchain-openai = "*"
+langchain-core = "*"
+langchain-ollama = "*"
+langchain-neo4j = "*"
+gradio = "*"
 
 [dev-packages]
+flake8 = "*"
 
 [requires]
 python_version = "3.13"
-python_full_version = "3.13.2"
