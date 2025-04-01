@@ -36,21 +36,20 @@ F-->|IMPORT|G
 """)
 ```
 ### bigPicture
-flowchart LR
+flowchart TD
     A((User))
     B(Chatbot)
     C(KG)
     D(Codebase)
     E(LLM)
     A -->|Question|B
-    B <-->|Queries|C
+    B <-->|Queries + Results|C
     D -->|Metadata|C
-    C -->|Prompts|E
-    E -->|Natural language|B
+    E <-->|Prompts + Explanation|C
 
-### structuredOverview
+### codeOverview
 flowchart TD
-subgraph Structured
+subgraph Code
     A(Database)-->|Extract|I(Schema)
     I-->J(Graph data model)
     J-->K(Data KG Model) 
@@ -64,9 +63,9 @@ subgraph Structured
     N-->O
 end
 
-### unstructuredOverview
+### textOverview
 flowchart TD
-subgraph Unstructured
+subgraph Text / Business Domain
     C(Text)-->D(Text chunking)-->E(Embedding model)
     D-->F(Entity Extraction)
     F-->E
@@ -90,8 +89,8 @@ flowchart TD
     C-->|drag-n-drop|D
     H-->D
     E-->F(Neo4j Knowledge Graph)
-    F-->G(Custom Search App/Plugin)
-    G-->D
+    F-->G(Custom search tool / Plugin)
+    G-->|Plugin|D
 
 ### dataKGCodeFlow
 flowchart TD

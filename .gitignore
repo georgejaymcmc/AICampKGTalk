@@ -1,5 +1,6 @@
-# Ignore dev notes
+# Ignore dev notes and files
 docs
+code_tests.ipynb
 
 # Ignore .idea files
 .idea/
@@ -24,6 +25,7 @@ lerna-debug.log*
 .env.production.local
 .env.local
 .env
+certificate.pem
 
 # Default ignored files
 /shelf/
