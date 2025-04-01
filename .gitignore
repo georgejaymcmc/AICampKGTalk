@@ -8,6 +8,9 @@ code_tests.ipynb
 # Ignore Pipfile.lock
 *.lock
 
+# Ignore node_modules directory
+node_modules/
+
 # Logs
 logs
 *.log
