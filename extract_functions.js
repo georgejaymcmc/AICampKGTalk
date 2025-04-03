@@ -73,7 +73,7 @@ function traverseNode(node, parent = null) {
       break;
 
     case 'CallExpression':
-      let functionName = "[Anonymous]";
+      let functionName = "";
       if (node.callee.type === "Identifier") functionName = node.callee.name;
       if (node.callee.type === "MemberExpression") functionName = node.callee.property.name;
 
