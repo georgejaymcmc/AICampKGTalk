@@ -49,7 +49,7 @@ flowchart TD
 
 ### codeOverview
 flowchart TD
-subgraph Code
+subgraph Data KG + App KG
     A(Database)-->|Extract|I(Schema)
     I-->J(Graph data model)
     J-->K(Data KG Model) 
@@ -65,7 +65,7 @@ end
 
 ### textOverview
 flowchart TD
-subgraph Text / Business Domain
+subgraph Business Domain KG
     C(Text)-->D(Text chunking)-->E(Embedding model)
     D-->F(Entity Extraction)
     F-->E
@@ -110,7 +110,7 @@ flowchart TD
     A((Repo_sub_folder))-->|HOLDS|B((File_name))
     end
     subgraph Question 3: LLM
-    C((CodeDoc_GPT))-->|EXPLAINS|B
+    C((CodeDoc_LLM))-->|EXPLAINS|B
     end
     B-->|MENTIONS|D((Function))
     subgraph Question 2: AST
