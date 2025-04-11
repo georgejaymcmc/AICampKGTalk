@@ -75,8 +75,12 @@ subgraph Business Domain KG
 
 ### combined
 flowchart TD
-subgraph Future State
-    A(Data KG Model)<-->B(Application KG Model)<-->C(Business KG Model)
+subgraph Linking the KGs
+    A(Data KG Model)
+    B(Application KG Model)
+    C(Business KG Model)
+    B-->|Tags| A
+    C-->|Tags| B
     end
 
 ### zoteroWorkflow
