@@ -47,7 +47,7 @@ content management application [Zotero](https://github.com/zotero/zotero/tree/ma
    - author has used OpenAI APIs in previous iterations
 	
 
-4. Generate a `Github Personal Access Token` 
+4. [Generate](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) a classic `Github Personal Access Token` 
 	- to use the Github Codesearch API for its lexical search capability
 
 
@@ -55,5 +55,35 @@ content management application [Zotero](https://github.com/zotero/zotero/tree/ma
 
 1. Sample `.env`
 ```
+NEO4J_URI=bolt://localhost:7687
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=pw-for-your-neo4j-dbms
+GITHUB_TOKEN=from-github
+```
+
+2. Install Python packages from `Pipfile`
+```
+>pip install pipenv 
+
+>pipenv install
+
+>pipenv shell
+
+>pipenv graph 
+```
+
+3. Install NodeJS `babel` packages from `package.json`
+
+- [Install](https://nodejs.org/en/download) NodeJS to traverse the 
+  Javascript ASTs to extract functions, params, etc
 
 ```
+>npm install
+```
+
+### Contact
+
+For questions, suggestions, or collaborations, feel free to:
+- Open an [Issue](https://github.com/georgejaymcmc/AICampKGTalk/issues)
+- Email me: george@mcmc-capital.com
+- Connect on [LinkedIn](https://www.linkedin.com/in/georgejaymcmc)
