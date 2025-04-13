@@ -43,8 +43,7 @@ content management application [Zotero](https://github.com/zotero/zotero/tree/ma
 
 3. Access to an LLM
 
-   - example uses `deepseek-coder-v2:16B` running locally via Ollama to 
-	 generate code explanations
+   - example uses `deepseek-coder-v2:16B` running locally via Ollama
    - author has used OpenAI APIs in previous iterations
 	
 
