@@ -19,8 +19,9 @@ content management application [Zotero](https://github.com/zotero/zotero/tree/ma
 2. Application KG - created by using:
    - the Abstract Syntax Tree to 
       extract function and parameter names, and
-   - lexical search to connect all the files in the repo
-   - files of interest are then sent to an LLM for a natural language explanation of what the code does
+   - lexical search to connect different file types in the repo
+   - files of interest are then sent to an LLM for a 
+	 natural language explanations
 
 
 3. Business Domain KG - illustrates how to ingest a public ontology to tie-in business concepts to content
@@ -34,9 +35,9 @@ content management application [Zotero](https://github.com/zotero/zotero/tree/ma
 	
 2. Install `Neo4j Community edition`
 
-   - [Desktop](https://neo4j.com/download/) version, or
+   - [desktop](https://neo4j.com/download/) version, or
    - their free [Cloud](https://neo4j.com/product/auradb/)-tier
-   - [Upload](https://neo4j.com/docs/desktop-manual/current/operations/create-from-dump/) the included `dump` files to run neo4j queries and bypass the 
+   - [upload](https://neo4j.com/docs/desktop-manual/current/operations/create-from-dump/) the included `dump` files to run neo4j queries and bypass the 
      data creation and ingestion step   
 
 
